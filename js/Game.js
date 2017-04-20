@@ -18,7 +18,6 @@ function Game(canvas, resources) {
         this.camera = new Camera(this.ctx, this.shyame);
         this.robotUnits = {};
         this.bestScore = Util.getCookie('bestScore');
-        console.log(this.bestScore);
         if(this.bestScore == "")
             this.bestScore = 0;
 

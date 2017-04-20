@@ -50,8 +50,8 @@ function Actor(ctx, startPosition, canvas, camera, collisionHandler, resources) 
             _this.step();
         if (_this.jetFuel < _this.maxJetFuel)
             _this.jetFuel += 0.5;
-        if(_this.health < _this.maxHealth && _this._health > 0)
-            _this.health += 0.5;
+        if(_this.health < _this.maxHealth && _this.health > 0)
+            _this.health += 0.2;
     };
 
     this.step = function() {
